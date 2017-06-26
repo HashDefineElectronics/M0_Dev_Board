@@ -1,0 +1,3 @@
+[submodule "Hardware/HDE_PUB_LIB"]
+	path = Hardware/HDE_PUB_LIB
+	url = git@github.com:HashDefineElectronics/HDE_PUB_LIB.git
