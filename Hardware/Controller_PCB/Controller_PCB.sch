@@ -15,12 +15,12 @@ LIBS:HDEP_Switches
 LIBS:HDEP_Transceivers
 LIBS:HDEP_TVS
 LIBS:HDEP_Varistors
-LIBS:Motherboard-cache
+LIBS:Controller_PCB-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -30,4 +30,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Sheet
+S 2050 1300 1100 900 
+U 59553138
+F0 "Controller" 60
+F1 "Controller.sch" 60
+$EndSheet
 $EndSCHEMATC

@@ -1,0 +1,148 @@
+EESchema Schematic File Version 2
+LIBS:HDEP_Capacitor
+LIBS:HDEP_Connectors
+LIBS:HDEP_Crystals
+LIBS:HDEP_Diodes
+LIBS:HDEP_Fuses
+LIBS:HDEP_IC
+LIBS:HDEP_Inductors
+LIBS:HDEP_Mechanical
+LIBS:HDEP_Modules
+LIBS:HDEP_Power
+LIBS:HDEP_Regulators
+LIBS:HDEP_Resistors
+LIBS:HDEP_Switches
+LIBS:HDEP_Transceivers
+LIBS:HDEP_TVS
+LIBS:HDEP_Varistors
+LIBS:Controller_PCB-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F072CBT6 U1
+U 1 1 59553141
+P 5100 2600
+F 0 "U1" H 5150 2650 60  0000 C CNN
+F 1 "STM32F072CBT6" H 5450 0   60  0000 C CNN
+F 2 "HDEP_IC:LQFP_48" H 4250 3100 60  0001 C CNN
+F 3 "" H 4820 2125 60  0001 C CNN
+F 4 "ARM Cortex-M0, 32bit, 48 MHz, 128 KB, 16 KB, 48 Pins, USB Line" H 5100 3000 60  0001 C CNN "Description"
+F 5 "STMicroElectronics" H 5100 3100 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 5100 3450 60  0001 C CNN "Supplier"
+F 7 "2432094" H 5100 3350 60  0001 C CNN "Supplier No."
+	1    5100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ABM7-12.000MHZ-D2Y-T X?
+U 1 1 5955330F
+P 2400 1450
+F 0 "X?" H 2400 1625 60  0000 C CNN
+F 1 "ABM7-12.000MHZ-D2Y-T" H 2400 1150 60  0000 C CNN
+F 2 "HDEP_Crystals:ABM7" H 2400 2450 60  0001 C CNN
+F 3 "" H 2120 975 60  0001 C CNN
+F 4 "CRYSTAL, 12MHZ, 18PF, - 40°C to + 60°C" H 2400 1850 60  0001 C CNN "Description"
+F 5 "ABRACON" H 2400 1950 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 2400 2300 60  0001 C CNN "Supplier"
+F 7 "2101331" H 2400 2200 60  0001 C CNN "Supplier No."
+F 8 "12MHZ 18PF" H 2400 1225 60  0000 C CNN "C_Value"
+	1    2400 1450
+	1    0    0    -1  
+$EndComp
+Text Notes 3300 1050 0    60   ~ 0
+Note: Crystal Load Capacitance\n\nCs = 10pF [Include board and MCU stray capacitance see DM00090510 page 68]\nCl = 18pf/2 = 9pF\nC = Cs + Cl = 19pF = ~20pF
+$Comp
+L MC0402N200J500CT C?
+U 1 1 59554011
+P 3100 1450
+F 0 "C?" H 3125 1600 60  0000 C CNN
+F 1 "MC0402N200J500CT" H 3100 1175 60  0000 C CNN
+F 2 "HDEP_Capacitors:CAP_0402" H 3100 2450 60  0001 C CNN
+F 3 "" H 2820 975 60  0001 C CNN
+F 4 "20pF, 50V, 0402, C0G / NP0, 5%" H 3100 1850 60  0001 C CNN "Description"
+F 5 "MULTICOMP" H 3100 1950 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 3100 2300 60  0001 C CNN "Supplier"
+F 7 "1758948" H 3100 2200 60  0001 C CNN "Supplier No."
+F 8 "20pF 50V 5%" H 3100 1275 60  0000 C CNN "C_Value"
+	1    3100 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L MC0402N200J500CT C?
+U 1 1 5955410B
+P 1750 1450
+F 0 "C?" H 1775 1600 60  0000 C CNN
+F 1 "MC0402N200J500CT" H 1750 1175 60  0000 C CNN
+F 2 "HDEP_Capacitors:CAP_0402" H 1750 2450 60  0001 C CNN
+F 3 "" H 1470 975 60  0001 C CNN
+F 4 "20pF, 50V, 0402, C0G / NP0, 5%" H 1750 1850 60  0001 C CNN "Description"
+F 5 "MULTICOMP" H 1750 1950 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 1750 2300 60  0001 C CNN "Supplier"
+F 7 "1758948" H 1750 2200 60  0001 C CNN "Supplier No."
+F 8 "20pF 50V 5%" H 1750 1275 60  0000 C CNN "C_Value"
+	1    1750 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 595543A4
+P 3400 1650
+F 0 "#PWR?" H 3400 1400 50  0001 C CNN
+F 1 "GND" H 3400 1500 50  0000 C CNN
+F 2 "HDEP_" H 3400 1650 60  0001 C CNN
+F 3 "" H 3400 1650 60  0000 C CNN
+	1    3400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 595543C2
+P 1350 1650
+F 0 "#PWR?" H 1350 1400 50  0001 C CNN
+F 1 "GND" H 1350 1500 50  0000 C CNN
+F 2 "HDEP_" H 1350 1650 60  0001 C CNN
+F 3 "" H 1350 1650 60  0000 C CNN
+	1    1350 1650
+	1    0    0    -1  
+$EndComp
+Text Label 3400 1450 0    60   ~ 0
+MCU_OSC_IN
+Text Label 1350 1450 2    60   ~ 0
+MCU_OSC_OUT
+Wire Notes Line
+	2400 1150 2400 850 
+Wire Notes Line
+	2400 850  3250 850 
+Wire Wire Line
+	2150 1450 1950 1450
+Wire Wire Line
+	2650 1450 2850 1450
+Wire Wire Line
+	3300 1450 3400 1450
+Wire Wire Line
+	3400 1450 3400 1650
+Wire Wire Line
+	1500 1450 1350 1450
+Wire Wire Line
+	1350 1450 1350 1650
+Text Label 4550 3100 2    60   ~ 0
+MCU_OSC_IN
+Wire Wire Line
+	4900 3100 4550 3100
+Text Label 4550 3200 2    60   ~ 0
+MCU_OSC_OUT
+Wire Wire Line
+	4900 3200 4550 3200
+$EndSCHEMATC
